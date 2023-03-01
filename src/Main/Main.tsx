@@ -15,7 +15,9 @@ export const Main = () => {
                         </p>
                     </p>
                 </div>
-                <div className={ `${ s.main__content_item } + ${s.main__content_photo}` }>Photo</div>
+                <div className={ `${ s.main__content_item } + ${s.main__content_photo}` }>
+                    <img src='https://www.meme-arsenal.com/memes/a9f034df5285bed728c5fe025c01e1d3.jpg' alt="Just MyAva"/>
+                </div>
 
             </div>
         </div>

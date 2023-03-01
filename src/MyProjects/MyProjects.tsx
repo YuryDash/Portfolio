@@ -25,8 +25,8 @@ export const MyProjects = () => {
                     </div>
 
                     <div className={s.example}>
-                        <div className={s.example__img}>
-                            <button className={s.example__button}>Show</button>
+                        <div className={`${s.example__img} + ${s.example__imgTwo}`}>
+                            <button className={`${s.example__button} + ${s.example__button_two}`}>Show</button>
                         </div>
                         <div className={s.example__description}>
                             <div className={s.example__title}>TodoList</div>

@@ -1,5 +1,7 @@
 import s from "./Skills.module.scss"
 import {v1} from "uuid";
+import {useState} from "react";
+import {log} from "util";
 
 
 export const Skills = () => {
@@ -19,7 +21,7 @@ export const Skills = () => {
         }, {
             id: v1(),
             title: 'JavaScript',
-            text: 'JavaScript (JS) is the only programming language for '+
+            text: 'JavaScript (JS) is the only programming language for ' +
                 ' descriptions of the behavior of elements on a page in the browser: it makes ' +
                 ' interfaces interactive'
         }, {
@@ -45,7 +47,9 @@ export const Skills = () => {
         }
     ]
 
+
     const mappedItems = data.map(el => {
+
         return (
             <div className={s.skills__achieve} key={el.id}>
                 <div className={s.item__img}></div>
@@ -57,7 +61,11 @@ export const Skills = () => {
     return (
         <div className={s.skills}>
             <div className={s.skills__title}>
-                <h2>SKILLS</h2>
+                <h2 id={'lol'}>Hello
+                    <span className={s.type}>
+                        <span> world :D</span>
+                    </span>
+                </h2>
             </div>
 
             <div className={s.skills__achieve_wrap}>{mappedItems}</div>

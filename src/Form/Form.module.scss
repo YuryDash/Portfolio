@@ -1,0 +1,17 @@
+
+.form {
+  color: #fb2f2f;
+  background-color: #676767;
+
+  &__wrapper {
+    
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+.input__two{
+  padding: 20px 0;
+}

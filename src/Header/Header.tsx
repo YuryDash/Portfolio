@@ -4,8 +4,8 @@ import {Nav} from "./Navigation/Nav";
 
 export const Header = () => {
     return (
-        <div className={s.wrapper}>
+        <header className={s.wrapper}>
             <Nav/>
-        </div>
+        </header>
     )
 }

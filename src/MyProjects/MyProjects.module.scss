@@ -2,7 +2,7 @@
 .projects {
   border: 1px solid blue;
   font-family: "Yu Gothic UI Semibold", serif;
-  min-height: 100vh;
+  min-height: 70vh;
   background-color: #ffe5c4;
 
   &__title {
@@ -85,10 +85,14 @@
         opacity: 60%;
         box-shadow: 0 0 5px 5px white;
         color: white;
+        transition-duration: 500ms;
+
 
         &:hover {
           opacity: 80%;
           box-shadow: 0 0 5px 5px #325aff;
+          transition-duration: 500ms;
+
         }
 
         &:active {
@@ -104,10 +108,12 @@
         color: black;
         opacity: 60%;
         background-color: white;
+        transition-duration: 500ms;
 
         &:hover {
           opacity: 80%;
           box-shadow: 0 0 5px 5px #fb2f2f;
+          transition-duration: 500ms;
         }
 
         &:active {

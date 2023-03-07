@@ -8,7 +8,7 @@ export const PATH = {
 }
 export const ABOUT = {
     NAME: 'YURY DASUKEVICH',
-    POSITION: 'FRONT-END DEVELOPER BASED IN #MINSK',
+    POSITION: ["I'm front-end developer", "Hello my Friends","This is my skills"],
     PHONE: '+375 (29) 111 11 01',
     EMAIL: 'ydaszukiewicz@gmail.com'
 }

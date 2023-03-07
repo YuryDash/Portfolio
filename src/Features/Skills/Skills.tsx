@@ -3,6 +3,8 @@ import {v1} from "uuid";
 import React from "react";
 import {Fade} from "react-awesome-reveal";
 import ReactTypingEffect from 'react-typing-effect';
+import {ABOUT} from "../../common/constants/constants";
+import {TitleBold} from "../../components/TitleBold/TitleBold";
 
 
 
@@ -62,15 +64,13 @@ export const Skills = () => {
     })
     return (
         <div className={s.skills} id={'skills'}>
+
+            <div className={s.wrapper__title}><TitleBold  text={"Knowledge moving"} colorText={" FORWARD"}/></div>
+            
             <div className={s.skills__title}>
-                <div>
-                    <Fade cascade damping={0.5}>
-                        <h3>Hello My Friend</h3>
-                        <h3>This is</h3>
-                        <h3>My Skills</h3>
-                        <ReactTypingEffect text={["I'm front-end developer", ""]}/>
+                    <Fade cascade damping={0.1} className={s.skills__typingEffects}>
+                        <ReactTypingEffect className={s.skills__typingEffects} text={ABOUT.POSITION}/>
                     </Fade>
-                </div>
             </div>
             <div className={s.skills__achieve_wrap}>{mappedItems}</div>
         </div>

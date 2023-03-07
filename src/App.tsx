@@ -7,6 +7,7 @@ import {MyProjects} from "./Features/MyProjects/MyProjects";
 import {RemoteWork} from "./Features/RemoteWork/RemoteWork";
 import {PATH} from "./common/constants/constants";
 import {Route, Routes} from 'react-router-dom';
+import {Footer} from "./Features/Footer/Footer";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                     <Route path={PATH.PROJECTS} element={<MyProjects/>}/>
                     <Route path={PATH.CONTACTS} element={<RemoteWork/>}/>
                 </Routes>
+                <Footer/>
             </div>
         </div>
     );

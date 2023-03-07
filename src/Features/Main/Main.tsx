@@ -7,7 +7,7 @@ export const Main = () => {
     return (
         <div className={s.main} id={'main'}>
             <Particle/>
-            <TitleBold text={'ABOUT'} classes={'styles'} colorText={'ME'}/>
+            <TitleBold text={'ABOUT'} colorText={'ME'}/>
             <div className={s.main__content}>
 
                 <div className={s.main__content_item}>

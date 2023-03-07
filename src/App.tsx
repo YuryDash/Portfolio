@@ -1,11 +1,13 @@
 import React from 'react';
 import s from './App.module.scss';
 import {Header} from "./Header/Header";
-import {Main} from "./Main/Main";
-import {Skills} from "./Skills/Skills";
-import {MyProjects} from "./MyProjects/MyProjects";
-import {RemoteWork} from "./RemoteWork/RemoteWork";
-import {Form} from "./Form/Form";
+import {Main} from "./Features/Main/Main";
+import {Skills} from "./Features/Skills/Skills";
+import {MyProjects} from "./Features/MyProjects/MyProjects";
+import {RemoteWork} from "./Features/RemoteWork/RemoteWork";
+import {PATH} from "./common/constants/constants";
+import {Route, Routes} from 'react-router-dom';
+
 
 function App() {
     return (
@@ -13,11 +15,12 @@ function App() {
 
             <div className={s.container}>
                 <Header/>
-                <Main/>
-                <Skills/>
-                <MyProjects/>
-                <RemoteWork/>
-                <Form/>
+                <Routes>
+                    <Route path={PATH.MAIN} element={<Main/>}/>
+                    <Route path={PATH.SKILLS} element={<Skills/>}/>
+                    <Route path={PATH.PROJECTS} element={<MyProjects/>}/>
+                    <Route path={PATH.CONTACTS} element={<RemoteWork/>}/>
+                </Routes>
             </div>
         </div>
     );

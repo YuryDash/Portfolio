@@ -1,47 +1,81 @@
 .nav {
-  font-family: "Roboto Thin";
-margin-right: 50px;
- &__links{
-   min-width: 400px;
-   display: flex;
-   justify-content: space-between;
-    .nav__link{
-      color: #ffffff;
-      font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 50px;
+  font-weight: 400;
+  z-index: 10;
+
+  &__links {
+    min-width: 400px;
+    display: flex;
+    justify-content: space-between;
+
+    .nav__link {
+      color: white;
+      text-transform: capitalize;
+      position: relative;
+      font-size: 23px;
+      letter-spacing: 2px;
+
+      &:hover {
+        color: yellow;
+
+        &::before {
+          width: 100%;
+        }
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: white;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        bottom: -10px;
+      }
     }
   }
 }
 
 @media(max-width: 1200px) {
-  .nav{
+  .nav {
     max-width: 970px;
-    &__links{
+
+    &__links {
       min-width: 300px;
 
     }
-    .nav__link{
+
+    .nav__link {
       font-size: 18px;
     }
   }
 }
+
 @media(max-width: 992px) {
-  .nav{
+  .nav {
     max-width: 750px;
-    &__links{
+
+    &__links {
       min-width: 260px;
 
     }
-    .nav__link{
+
+    .nav__link {
       font-size: 16px;
     }
 
-    }
+  }
 }
+
 @media(max-width: 767px) {
-  .nav{
+  .nav {
     max-width: none;
-    background-color: #410a0a;
-    &__links{
+
+    &__links {
       min-width: 100px;
 
     }

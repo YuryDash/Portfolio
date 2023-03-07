@@ -1,7 +1,9 @@
 import s from "./Skills.module.scss"
 import {v1} from "uuid";
-import {useState} from "react";
-import {log} from "util";
+import React from "react";
+import {Fade} from "react-awesome-reveal";
+import ReactTypingEffect from 'react-typing-effect';
+
 
 
 export const Skills = () => {
@@ -59,17 +61,18 @@ export const Skills = () => {
         )
     })
     return (
-        <div className={s.skills}>
+        <div className={s.skills} id={'skills'}>
             <div className={s.skills__title}>
-                <h2 id={'lol'}>Hello
-                    <span className={s.type}>
-                        <span> world :D</span>
-                    </span>
-                </h2>
+                <div>
+                    <Fade cascade damping={0.5}>
+                        <h3>Hello My Friend</h3>
+                        <h3>This is</h3>
+                        <h3>My Skills</h3>
+                        <ReactTypingEffect text={["I'm front-end developer", ""]}/>
+                    </Fade>
+                </div>
             </div>
-
             <div className={s.skills__achieve_wrap}>{mappedItems}</div>
-
         </div>
     )
 }

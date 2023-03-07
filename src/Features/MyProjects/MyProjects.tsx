@@ -4,7 +4,7 @@ import React from "react";
 
 export const MyProjects = () => {
     return (
-        <div className={s.projects}>
+        <div className={s.projects} id={'MyProject'}>
                 <h2 className={s.projects__title}>
                     <span>MY WORKS</span>
                 </h2>

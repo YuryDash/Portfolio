@@ -1,8 +1,10 @@
 @import "./StartStyleZero/zero";
 
 .App {
-background-color: #222222;
-  min-width: 370px;
+  background-color: #222222;
+  max-width: 1800px;
+  transition-duration: 1s;
+  margin: 0 auto;
 
   .container {
     margin: 0 auto;
@@ -10,17 +12,19 @@ background-color: #222222;
 }
 
 @media(max-width: 1200px) {
-  .container{
+  .container {
     max-width: 970px;
   }
 }
+
 @media(max-width: 992px) {
-  .container{
+  .container {
     max-width: 750px;
   }
 }
+
 @media(max-width: 767px) {
-  .container{
+  .container {
     max-width: none;
     min-width: 370px;
   }

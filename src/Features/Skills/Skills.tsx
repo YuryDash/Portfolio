@@ -68,7 +68,7 @@ export const Skills = () => {
             <div className={s.wrapper__title}><TitleBold  text={"Knowledge moving"} colorText={" FORWARD"}/></div>
             
             <div className={s.skills__title}>
-                    <Fade cascade damping={0.1} className={s.skills__typingEffects}>
+                    <Fade cascade damping={0.1}>
                         <ReactTypingEffect className={s.skills__typingEffects} text={ABOUT.POSITION}/>
                     </Fade>
             </div>

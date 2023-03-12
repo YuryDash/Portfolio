@@ -31,7 +31,7 @@ export const MyProjects = () => {
                     <div className={s.example}>
                         <div className={`${s.example__img} + ${s.example__imgTwo}`}>
                             <button className={`${s.example__button} + ${s.example__button_two}`}>
-                                <a href={LINKS.LINKED_IN} target={'_blank'} >Show</a>
+                                <a href={LINKS.LINKED_IN} rel='noreferrer' target={'_blank'} >Show</a>
                             </button>
                         </div>
                         <div className={s.example__description}>

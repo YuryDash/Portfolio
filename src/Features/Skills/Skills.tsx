@@ -2,9 +2,11 @@ import s from "./Skills.module.scss"
 import {v1} from "uuid";
 import React from "react";
 import {Fade} from "react-awesome-reveal";
-import ReactTypingEffect from 'react-typing-effect';
+// import ReactTypingEffect from 'react-typing-effect';
 import {ABOUT} from "../../common/constants/constants";
 import {TitleBold} from "../../components/TitleBold/TitleBold";
+ import ReactTypingEffect from 'react-typing-effect';
+
 
 
 

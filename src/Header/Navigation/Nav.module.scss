@@ -1,83 +1,65 @@
 .nav {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  z-index: 10;
   margin-right: 50px;
+  border: 1px solid blueviolet;
+  box-sizing: border-box;
 
-  &__links {
-    max-width: 50%;
-    display: flex;
-    justify-content: space-between;
 
-    .nav__link {
-      margin-left: 30px;
-      color: white;
-      text-transform: capitalize;
-      position: relative;
-      font-size: 23px;
-      letter-spacing: 2px;
-
-      &:hover {
-        color: yellow;
-
-        &::before {
-          width: 100%;
-        }
-      }
-
-      &::before {
-        position: absolute;
-        content: "";
-        left: 0;
-        width: 0;
-        height: 3px;
-        background: white;
-        -webkit-transition: 0.3s;
-        -o-transition: 0.3s;
-        transition: 0.3s;
-        bottom: -10px;
-      }
-    }
-  }
+  //&__links {
+  //  max-width: 50%;
+  //  display: flex;
+  //  justify-content: center;
+  //  padding: 50px;
+  //
+  //  .nav__link {
+  //    margin-left: 30px;
+  //    color: white;
+  //    text-transform: capitalize;
+  //    position: relative;
+  //    font-size: 23px;
+  //    letter-spacing: 2px;
+  //
+  //
+  //
+  //    &:hover {
+  //      color: yellow;
+  //
+  //      &::before {
+  //        width: 100%;
+  //      }
+  //    }
+  //
+  //    &::before {
+  //      position: absolute;
+  //      content: "";
+  //      left: 0;
+  //      width: 0;
+  //      height: 3px;
+  //      background: white;
+  //      -webkit-transition: 0.3s;
+  //      -o-transition: 0.3s;
+  //      transition: 0.3s;
+  //      bottom: -10px;
+  //    }
+  //  }
+  //}
 }
 
 @media(max-width: 1200px) {
   .nav {
     max-width: 970px;
-
-    &__links {
-      min-width: 300px;
-
-    }
-
-    .nav__link {
-      font-size: 18px;
-    }
   }
 }
 
 @media(max-width: 992px) {
   .nav {
     max-width: 750px;
-
-    &__links {
-      min-width: 260px;
-
-    }
-
-    .nav__link {
-      font-size: 16px;
-    }
   }
 }
 
 @media(max-width: 767px) {
   .nav {
     max-width: none;
-
-    &__links {
-      min-width: 100px;
-
-    }
   }
 }

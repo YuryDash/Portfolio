@@ -14,6 +14,7 @@ import {Sidebar} from "./Features/Sidebar/Sidebar";
 function App() {
 
     const [toggleMenu, setToggleMenu] = useState(false)
+
     const closeMenu = useCallback(() => setToggleMenu(false), [])
     const openMenu = useCallback(() => setToggleMenu(true), [])
 
@@ -21,9 +22,8 @@ function App() {
         <div className={s.App}>
 
             <div className={s.container}>
-                <Header openMenu={openMenu}/>
-                <Sidebar openMenu={openMenu} handleClose={closeMenu}/>
-
+                <Header openMenu={openMenu} />
+                <Sidebar toggleMenu={toggleMenu}  closeMenu={closeMenu}/>
                 <Routes>
                     <Route path={'/'} element={<Main/>}/>
                     <Route path={PATH.SKILLS} element={<Skills/>}/>

@@ -15,7 +15,9 @@ export const MyProjects = () => {
                 <div className={s.projects__examples}>
                     <div className={s.example}>
                         <div className={s.example__img}>
-                            <button className={s.example__button}>Show</button>
+                            <button className={s.example__button}>
+                                <a href={"#"}>Show</a>
+                            </button>
                         </div>
                         <div className={s.example__description}>
                             <Fade cascade damping={0.8}> <div className={s.example__title}>Social Network</div> </Fade>

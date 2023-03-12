@@ -66,7 +66,6 @@
         align-items: center;
         justify-content: center;
         background-size: cover;
-
       }
 
       &__imgTwo {
@@ -79,6 +78,14 @@
         width: 25%;
         height: 50px;
         border: 1px solid white;
+        a{
+          color: black;
+          font-size: 20px;
+
+          &:hover {
+            font-size: 30px;
+          }
+        }
 
         &:hover {
           box-shadow: 0 0 5px 5px yellow;
@@ -95,19 +102,19 @@
 
         a{
           color: white;
+          font-size: 20px;
+          &:hover {
+            font-size: 30px;
+          }
         }
 
         &:hover {
-          opacity: 1;
           box-shadow: 0 0 5px 5px yellow;
           transition-duration: 500ms;
-          color: black;
         }
 
         &:active {
           box-shadow: none;
-          background-color: black;
-          color: white;
         }
       }
 
@@ -145,7 +152,6 @@
       &::before {
         width: 15%;
         right: 50px;
-
       }
 
       &::after {
@@ -160,19 +166,15 @@
       .example {
 
         &__button {
-          width: 90px;
+          width: 25%;
           height: 32px;
-          box-shadow: 0 0 4px 4px white;
 
           &:hover {
-            opacity: 80%;
             box-shadow: 0 0 4px 4px yellow;
           }
         }
 
         &__button_two {
-          box-shadow: 0 0 4px 4px yellow;
-
           &:hover {
             box-shadow: 0 0 4px 4px yellow;
           }
@@ -224,19 +226,15 @@
         }
 
         &__button {
-          width: 80px;
+          width: 25%;
           height: 29px;
-          box-shadow: 0 0 3px 3px white;
 
           &:hover {
-            opacity: 80%;
             box-shadow: 0 0 3px 3px yellow;
           }
         }
 
         &__button_two {
-          box-shadow: 0 0 3px 3px black;
-
           &:hover {
             box-shadow: 0 0 3px 3px yellow;
           }
@@ -293,19 +291,15 @@
         }
 
         &__button {
-          width: 70px;
-          height: 26px;
-          box-shadow: 0 0 3px 3px white;
+          width: 25%;
+          height: 30px;
 
           &:hover {
-            opacity: 80%;
             box-shadow: 0 0 3px 3px yellow;
           }
         }
 
         &__button_two {
-          box-shadow: 0 0 3px 3px black;
-
           &:hover {
             box-shadow: 0 0 3px 3px yellow;
           }

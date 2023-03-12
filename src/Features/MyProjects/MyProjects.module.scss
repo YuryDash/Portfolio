@@ -81,10 +81,6 @@
         a{
           color: black;
           font-size: 20px;
-
-          &:hover {
-            font-size: 30px;
-          }
         }
 
         &:hover {
@@ -103,9 +99,6 @@
         a{
           color: white;
           font-size: 20px;
-          &:hover {
-            font-size: 30px;
-          }
         }
 
         &:hover {
@@ -221,9 +214,6 @@
       margin-top: 16px;
 
       .example {
-
-        &__img {
-        }
 
         &__button {
           width: 25%;

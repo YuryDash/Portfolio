@@ -4,7 +4,7 @@ import {Header} from "./Header/Header";
 import {Main} from "./Features/Main/Main";
 import {Skills} from "./Features/Skills/Skills";
 import {MyProjects} from "./Features/MyProjects/MyProjects";
-import {RemoteWork} from "./Features/RemoteWork/RemoteWork";
+import {Contacts} from "./Features/RemoteWork/Contacts";
 import {PATH} from "./common/constants/constants";
 import {Route, Routes} from 'react-router-dom';
 import {Footer} from "./Features/Footer/Footer";
@@ -28,7 +28,7 @@ function App() {
                     <Route path={'/'} element={<Main/>}/>
                     <Route path={PATH.SKILLS} element={<Skills/>}/>
                     <Route path={PATH.PROJECTS} element={<MyProjects/>}/>
-                    <Route path={PATH.CONTACTS} element={<RemoteWork/>}/>
+                    <Route path={PATH.CONTACTS} element={<Contacts/>}/>
                 </Routes>
                 <Footer/>
             </div>

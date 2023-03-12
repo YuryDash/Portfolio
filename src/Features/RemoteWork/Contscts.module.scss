@@ -1,0 +1,175 @@
+.form {
+  min-width: 370px;
+  width: 100%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://www.gifcen.com/wp-content/uploads/2022/04/wallpaper-gif-4.gif");
+  background-position: center;
+  background-size: cover;
+
+  min-height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  &__titles{
+    font-size: 80px;
+
+    h2{
+      font-size: 22px;
+      margin: 20px 0;
+
+      position: relative;
+      &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        left: -10%;
+        top: 45%;
+        background-color: yellow;
+      }
+      &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        right: -10%;
+        top: 45%;
+        background-color: yellow;
+      }
+
+    }
+  }
+
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(34, 34, 34, 0.55);
+  }
+
+  &__contacts {
+    flex: 50%;
+    margin: 5%;
+
+    .contact__items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h3 {
+        font-size: 24px;
+        margin: 25px 0;
+      }
+
+      a {
+        color: yellow;
+        font-size: 22px;
+      }
+    }
+  }
+
+
+  &__launch {
+    flex: 50%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 22px;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    .input__one {
+      input {
+        width: 500px;
+        background-color: yellow;
+        padding: 0 100px;
+        line-height: 50px;
+        font-size: 20px;
+        border-radius: 25px;
+        margin: 30px 0;
+      }
+    }
+    .input__two {
+      input {
+        width: 500px;
+        background-color: yellow;
+        padding: 0 100px;
+        line-height: 50px;
+        font-size: 20px;
+        border-radius: 25px;
+        margin: 30px 0;
+      }
+    }
+textarea{
+  font-size: 22px;
+  min-width: 500px;
+  max-width:500px;
+  min-height: 200px;
+  max-height: 300px;
+  background-color: rgba(255, 255, 0, 0.84);
+  border-radius: 25px;
+  padding: 25px;
+}
+  }
+&__button{
+  width: 25%;
+  height: 50px;
+  margin: 25px 0;
+  background-color: yellow;
+  border-radius: 25px;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.64);
+  box-shadow: 5px 5px 5px black;
+  transition-duration: 0.3s;
+
+  &:hover{
+    color: black;
+  }
+  &:active {
+    box-shadow: none;
+    transition-duration: 0.3s;
+  }
+}
+}
+
+
+@media (max-width: 1200px) {
+  .work {
+    max-width: 970px;
+
+    &__wrapper div {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .work {
+    max-width: 750px;
+
+    &__wrapper div {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .work {
+    max-width: none;
+
+    &__wrapper div {
+      font-size: 20px;
+    }
+  }
+}

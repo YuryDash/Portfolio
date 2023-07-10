@@ -1,24 +1,21 @@
-
-
 export const PATH = {
-    MAIN: '/Portfolio',
-    SKILLS: '/skills',
-    PROJECTS: '/projects',
-    CONTACTS: '/contacts'
-}
+  MAIN: "/Portfolio",
+  SKILLS: "/skills",
+  PROJECTS: "/projects",
+  CONTACTS: "/contacts",
+  ERROR_PATH: "/error-path",
+};
 export const ABOUT = {
-    NAME: 'YURY DASUKEVICH',
-    POSITION: ["I'm front-end developer", "Hello my Friends","This is my skills"],
-    PHONE: '+375 (29) 111 11 01',
-    EMAIL: 'ydaszukiewicz@gmail.com'
-}
+  NAME: "YURY DASUKEVICH",
+  POSITION: ["I'm front-end developer", "Hello my Friends", "This is my skills"],
+  PHONE: "+375 (29) 111 11 01",
+  EMAIL: "ydaszukiewicz@gmail.com",
+};
 
 export const LINKS = {
-    GITHUB: 'https://github.com/YuryDash',
-    LINKED_IN: 'https://www.linkedin.com/in/yuri-daszukiewicz-816695262/',
-    TELEGRAM: 'https://t.me/Kollosok_1',
-    CODEWARS: 'https://www.codewars.com/users/YuryDash',
-    PROJECT_LINKS: {
-
-    }
-}
+  GITHUB: "https://github.com/YuryDash",
+  LINKED_IN: "https://www.linkedin.com/in/yuri-daszukiewicz-816695262/",
+  TELEGRAM: "https://t.me/Kollosok_1",
+  CODEWARS: "https://www.codewars.com/users/YuryDash",
+  PROJECT_LINKS: {},
+};

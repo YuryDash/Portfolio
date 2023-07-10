@@ -1,0 +1,25 @@
+.style {
+  color: rgb(195, 74, 74);
+  font-size: 50px;
+  text-align: center;
+
+  button {
+    width: 25%;
+    height: 50px;
+    margin: 25px 0;
+    background-color: yellow;
+    border-radius: 25px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.64);
+    box-shadow: 5px 5px 5px black;
+    transition-duration: 0.3s;
+
+    &:hover {
+      color: black;
+    }
+    &:active {
+      box-shadow: none;
+      transition-duration: 0.3s;
+    }
+  }
+}

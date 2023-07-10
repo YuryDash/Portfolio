@@ -1,6 +1,5 @@
 .form {
   min-width: 370px;
-  width: 100%;
   color: white;
   font-family: "Poppins", sans-serif;
   background-image: url("https://www.gifcen.com/wp-content/uploads/2022/04/wallpaper-gif-4.gif");
@@ -14,45 +13,43 @@
   align-items: center;
   justify-content: center;
 
-
-  &__titles{
+  &__titles {
     font-size: 80px;
 
-    h2{
+    h2 {
       font-size: 22px;
       margin: 20px 0;
 
       position: relative;
-      &::after{
-        content: '';
+      &::after {
+        content: "";
         display: block;
         position: absolute;
-        width: 30px;
+        width: 40px;
         height: 3px;
         left: -10%;
         top: 45%;
         background-color: yellow;
       }
-      &::before{
-        content: '';
+      &::before {
+        content: "";
         display: block;
         position: absolute;
-        width: 30px;
+        width: 40px;
         height: 3px;
         right: -10%;
         top: 45%;
         background-color: yellow;
       }
-
     }
   }
-
 
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(34, 34, 34, 0.55);
+    max-width: 100%;
   }
 
   &__contacts {
@@ -75,7 +72,6 @@
       }
     }
   }
-
 
   &__launch {
     flex: 50%;
@@ -111,65 +107,242 @@
         margin: 30px 0;
       }
     }
-textarea{
-  font-size: 22px;
-  min-width: 500px;
-  max-width:500px;
-  min-height: 200px;
-  max-height: 300px;
-  background-color: rgba(255, 255, 0, 0.84);
-  border-radius: 25px;
-  padding: 25px;
-}
+    textarea {
+      font-size: 22px;
+      min-width: 500px;
+      max-width: 500px;
+      min-height: 200px;
+      max-height: 300px;
+      background-color: rgba(255, 255, 0, 0.84);
+      border-radius: 25px;
+      padding: 25px;
+    }
   }
-&__button{
-  width: 25%;
-  height: 50px;
-  margin: 25px 0;
-  background-color: yellow;
-  border-radius: 25px;
-  font-size: 22px;
-  color: rgba(0, 0, 0, 0.64);
-  box-shadow: 5px 5px 5px black;
-  transition-duration: 0.3s;
-
-  &:hover{
-    color: black;
-  }
-  &:active {
-    box-shadow: none;
+  &__button {
+    width: 25%;
+    height: 50px;
+    margin: 25px 0;
+    background-color: yellow;
+    border-radius: 25px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.64);
+    box-shadow: 5px 5px 5px black;
     transition-duration: 0.3s;
+
+    &:hover {
+      color: black;
+    }
+    &:active {
+      box-shadow: none;
+      transition-duration: 0.3s;
+    }
   }
 }
-}
-
 
 @media (max-width: 1200px) {
-  .work {
+  .form {
     max-width: 970px;
+    &__titles {
+      font-size: 70px;
 
-    &__wrapper div {
-      font-size: 26px;
+      h2 {
+        font-size: 18px;
+        &::after {
+          width: 30px;
+        }
+        &::before {
+          width: 30px;
+        }
+      }
+    }
+    &__contacts {
+      flex: 50%;
+      margin: 5%;
+      .contact__items {
+        h3 {
+          font-size: 22px;
+          margin: 22px 0;
+        }
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+    &__launch {
+      h2 {
+        font-size: 20px;
+        line-height: 35px;
+      }
+
+      .input__one {
+        input {
+          width: 450px;
+          padding: 0 80px;
+          line-height: 40px;
+        }
+      }
+      .input__two {
+        input {
+          width: 450px;
+          padding: 0 80px;
+          line-height: 40px;
+        }
+      }
+      textarea {
+        font-size: 20px;
+        min-width: 450px;
+        max-width: 450px;
+      }
+    }
+    &__button {
+      height: 45px;
+      font-size: 20px;
     }
   }
 }
 
 @media (max-width: 992px) {
-  .work {
+  .form {
     max-width: 750px;
+    &__titles {
+      font-size: 60px;
 
-    &__wrapper div {
-      font-size: 24px;
+      h2 {
+        font-size: 16px;
+        &::after {
+          width: 25px;
+          left: -8%;
+        }
+        &::before {
+          width: 25px;
+          right: -8%;
+        }
+      }
+    }
+    &__contacts {
+      flex: 50%;
+      margin-left: 10px;
+      .contact__items {
+        h3 {
+          font-size: 20px;
+          margin: 20px 0;
+        }
+        a {
+          font-size: 18px;
+          margin: 10px;
+        }
+      }
+    }
+    &__launch {
+      h2 {
+        font-size: 20px;
+        line-height: 35px;
+      }
+
+      .input__one {
+        input {
+          width: 400px;
+          padding: 0 80px;
+          line-height: 40px;
+          margin: 25px 0;
+        }
+      }
+      .input__two {
+        input {
+          width: 400px;
+          padding: 0 60px;
+          line-height: 40px;
+          margin: 25px 0;
+        }
+      }
+      textarea {
+        font-size: 18px;
+        min-width: 400px;
+        max-width: 400px;
+      }
+    }
+    &__button {
+      height: 45px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .form {
+    max-width: 750px;
+    &__titles {
+      font-size: 50px;
+
+      h2 {
+        font-size: 14px;
+        &::after {
+          width: 25px;
+        }
+        &::before {
+          width: 25px;
+        }
+      }
+    }
+
+    &__wrapper {
+      flex-direction: column-reverse;
+    }
+
+    &__contacts {
+      margin: 0 0 20px 0;
+      .contact__items {
+        h3 {
+          font-size: 18px;
+          margin: 18px 0;
+        }
+        a {
+          font-size: 16px;
+          margin: 10px;
+        }
+      }
+    }
+    &__launch {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h2 {
+        font-size: 18px;
+        line-height: 30px;
+      }
+
+      .input__one {
+        input {
+          width: 350px;
+          padding: 0 60px;
+          line-height: 35px;
+          margin: 20px 0;
+        }
+      }
+      .input__two {
+        input {
+          width: 350px;
+          padding: 0 60px;
+          line-height: 35px;
+          margin: 0 0 20px 0;
+        }
+      }
+      textarea {
+        font-size: 16px;
+        min-width: 350px;
+        max-width: 350px;
+      }
+    }
+    &__button {
+      height: 40px;
+      font-size: 18px;
+      margin: 25px 0 0 0;
     }
   }
 }
 
 @media (max-width: 767px) {
-  .work {
-    max-width: none;
-
-    &__wrapper div {
-      font-size: 20px;
-    }
+  .form {
+    min-width: 100%;
   }
 }
